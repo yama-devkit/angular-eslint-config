@@ -1,0 +1,41 @@
+{
+    "name": "@yama-devkit/angular-eslint-config",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "A simple & effective Angular Eslint shared configuration",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yama-devkit/angular-eslint-config.git"
+    },
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    },
+    "main": "./dist/index.js",
+    "files": [
+        "./dist"
+    ],
+    "scripts": {
+        "build": "npx rollup -c",
+        "lint": "npx prettier --check .",
+        "format": "npx prettier --write ."
+    },
+    "prettier": "@yama-devkit/prettier-config",
+    "dependencies": {
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.4"
+    },
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^12.1.4",
+        "@yama-devkit/prettier-config": "^1.0.0",
+        "prettier": "^3.6.2",
+        "rollup": "^4.50.0",
+        "tslib": "^2.8.1"
+    },
+    "peerDependencies": {
+        "angular-eslint": "^20.1.0",
+        "eslint": "^9.0.0",
+        "typescript-eslint": "^8.0.0"
+    }
+}
